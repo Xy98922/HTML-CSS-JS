@@ -1,0 +1,112 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    margin:50px;
+    height: 135px;
+    
+}
+.image {
+    height: 135px;
+    width: 110px;
+    background-image: url(https://n.sinaimg.cn/news/transform/245/w110h135/20211115/9e4d-b52a78047f7b8dbfe7e16e6f2831977a.jpg);
+    float: left;
+    
+}
+.text {
+    height:140px;
+    width:150px;
+    font: 12px/24px 'SimSun';
+    color: rgba(0,0,0,.5);
+    padding:10px 10px 0;
+    float:left;
+}
+a {
+    display: inline-block;
+    height: 28px;
+    width:30px;
+    text-align: center;
+    background-color: #f4f4f5;
+    color: #606266;
+    text-decoration:none;
+    line-height:28px;
+    font-size:13px;
+    border-radius:5px;
+}
+.center{
+    text-align:center;
+    font-size:10px;
+}
+.center input{
+    width:20px;
+    outline:none;
+    text-align:center;
+    margin:0 5px;
+}
+.tixin1 {
+    height: 60px;
+    width: 230px;
+    background-color: #e01222;
+    position: relative;
+    float:left;
+    margin-left:150px;
+    text-align :center;
+    line-height:60px;
+}
+.tixin2 {
+    height: 60px;
+    width: 690px;
+    background-color: pink;
+    position: relative;
+    float:left;
+    margin-left:0px;
+    z-index:2
+}
+.zhijiao2, .zhijiao1,.zhijioa3,.zhijiao4 {
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top:0;
+    float:left;
+}
+.zhijiao2 {
+    right: -60px;
+    border-top: 30px solid #e01222;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-left: 30px solid #e01222;
+}
+.zhijiao1 {
+    left: 0;
+    border-top: 30px solid white;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-left: 30px solid white;
+}
+.zhijiao3 {
+    left: 0px;
+    top: 0px;
+    border-top: 30px solid #e01222;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-left: 30px solid #e01222;
+    float: left;
+}
+.zhijiao4 {
+    right:-60px;
+    top: 0px;
+    border-top: 30px solid pink;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-left: 30px solid pink;
+}
+.white{
+    height:60px;
+    width:920px;
+    position:absolute;
+    background-color:pink;
+    top:0;
+    right:-50px;
+    float:left;
+}

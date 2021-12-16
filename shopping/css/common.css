@@ -1,0 +1,385 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?mlpghk');
+    src: url('../fonts/icomoon.eot?mlpghk#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?mlpghk') format('truetype'), url('fonts/icomoon.woff?mlpghk') format('woff'), url('../fonts/icomoon.svg?mlpghk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.shortcut {
+    width: 1550px;
+    height: 31px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.welc {
+    width: 219px;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    line-height: 31px;
+    display: inline-block;
+    float: left;
+    left: 194px;
+    top: 0;
+    position: absolute;
+}
+
+.items {
+    height: 31px;
+    float: right;
+    position: absolute;
+    right: 175px;
+    top: 0;
+}
+
+.welc li {
+    float: left;
+}
+
+    .welc li a {
+        color: red;
+    }
+
+.items li {
+    float: right;
+    line-height: 31px;
+    margin: 0 10px;
+}
+
+    .items li:nth-child(2n) {
+        width: 1px;
+        height: 15px;
+        background-color: #666666;
+        margin-top: 8px;
+    }
+
+.items .arrow::after {
+    font-family: icomoon;
+    content: '\ea43';
+    margin-left: 3px;
+}
+/*header制作*/
+.search {
+    width: 1200px;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 27px;
+    position: relative;
+    float: left;
+    margin-left: 194px;
+}
+
+.logo {
+    height: 105px;
+    width: 256px;
+    background-image: url(../image/liebiaologo.png);
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    background-repeat: no-repeat;
+}
+
+    .logo a {
+        color: transparent;
+        height: 55px;
+        width: 219px;
+        display: block;
+    }
+
+.searchbox {
+    width: 539px;
+    height: 33px;
+    position: absolute;
+    top: 0;
+    left: 348px;
+    border: 2px solid #b1191a;
+}
+
+    .searchbox input {
+        border: 0px;
+        height: 33px;
+        width: 539px;
+        outline: 0px;
+    }
+
+button {
+    height: 35px;
+    width: 83px;
+    background-color: #b1191a;
+    position: absolute;
+    top: 0px;
+    left: 458px;
+    border: 0px;
+    color: white;
+}
+
+.car {
+    width: 107px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    right: 16px;
+    background-color: #f7f7f7;
+    line-height: 36px;
+    text-align: center;
+    padding-left: 17px;
+    border: 2px solid #dddfdd;
+}
+
+    .car::before {
+        background-image: url(../image/car.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        content: '100';
+        position: absolute;
+        color: transparent;
+        top: 6px;
+        left: 5px;
+    }
+
+    .car .count {
+        height: 14px;
+        border-radius: 7px 7px 7px 0;
+        color: white;
+        line-height: 14px;
+        background-color: #e60012;
+        display: inline-block;
+        position: absolute;
+        top: -7px;
+        right: 16px;
+        padding: 0 5px;
+        text-align: left;
+    }
+
+.tips {
+    width: 539px;
+    height: 22px;
+    position: absolute;
+    top: 33px;
+    left: 348px;
+}
+
+.nav li {
+    cursor: pointer;
+}
+
+.tips li a {
+    float: left;
+    margin: 2px 13px;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    line-height: 22px;
+    color: #808080;
+}
+/*导航栏制作*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+    float: left;
+    margin-left: 169px;
+}
+
+.nav {
+    width: 100%;
+    height: 45px;
+    border-bottom: 2px solid #b1191a;
+    float: left;
+    margin-top: 24px;
+}
+
+.dropdown {
+    width: 209px;
+    height: 45px;
+    background-color: #b1191a;
+    float: left;
+}
+
+    .dropdown .dt {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        color: white;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    .dropdown .dd {
+        width: 209px;
+        height: 31px;
+        background-color: #c81623;
+        color: white;
+        font-size: 14px;
+        text-align: left;
+        text-indent: 8px;
+        line-height: 32px;
+        transition: all 0.2s;
+        position: relative;
+    }
+
+        .dropdown .dd a {
+            color: white;
+        }
+
+        .dropdown .dd:hover {
+            background-color: white;
+            color: #c81623;
+        }
+
+        .dropdown .dd a:hover {
+            background-color: white;
+            color: #c81623;
+        }
+
+        .dropdown .dd::after {
+            position: absolute;
+            font-family: icomoon;
+            content: '\ea43';
+            margin-left: 184px;
+            top: 0px;
+            right: 10px;
+            display: inline-block;
+        }
+
+.navitems {
+    height: 45px;
+    background-color: #ffffff;
+    float: left;
+}
+
+    .navitems li {
+        float: left;
+        margin: 0 26px;
+        line-height: 45px;
+        font-size: 14px;
+        color: #333333;
+    }
+
+
+/*底部模块制作*/
+.footer {
+    height: 416px;
+    width: 100%;
+    float: left;
+    background-color: #f5f5f5;
+}
+
+.box1 {
+    height: 107px;
+    border-bottom: 1px solid #ededed;
+}
+
+.footer div[class^=logo] {
+    width: 220px;
+    height: 110px;
+    float: left;
+    position: relative;
+    margin-right: 50px;
+}
+
+.box1 span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #c81623;
+    border-radius: 25px;
+    top: 32px;
+    left: 36px;
+}
+
+.box1 img {
+    position: absolute;
+    top: 19px;
+    left: 21px;
+    z-index: 2;
+}
+
+.box1 h3 {
+    position: absolute;
+    top: 35px;
+    left: 90px;
+}
+
+.box1 p {
+    position: absolute;
+    top: 60px;
+    left: 90px;
+}
+
+.box2 {
+    height: 189px;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+}
+
+    .box2 dl {
+        width: 65px;
+        height: 110px;
+        float: left;
+        position: relative;
+        margin-top: 22px;
+        margin-left: 37px;
+        margin-right: 138px;
+    }
+
+    .box2 dt {
+        font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .box2 dd {
+        font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    }
+
+    .box2 dl:nth-child(5) {
+        width: 100px;
+        margin-left: 0px;
+        background-image: url(../image/wx_cz.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+        .box2 dl:nth-child(5) dd p {
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+        }
+
+.box3 {
+    float: left;
+    text-align: center;
+    margin-top: 10px
+}
+
+    .box3 li {
+        float: left;
+        margin: 0 15px;
+    }
+
+        .box3 li:first-child {
+            margin-left: 150px;
+        }
+
+        .box3 li:last-child {
+            margin-right: 50px;
+        }
+
+        .box3 li:nth-child(2n) {
+            width: 1px;
+            height: 15px;
+            border-left: 1px solid black;
+            margin: 0px;
+        }
+
+.address h3 {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666;
+}
+
+    .address h3:first-child {
+        padding-top: 10px;
+    }

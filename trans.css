@@ -1,0 +1,24 @@
+﻿.shopnav{
+    width:100%;
+    height:50px;
+    background-color:cadetblue;
+    position:relative;
+   
+}
+.phone {
+    height: 50px;
+    width: 100px;
+    background-color: pink;
+    line-height: 50px;
+    font-size:15px;
+    text-align:center;
+    position:absolute;
+    transition:height 0.5s ;
+}
+.phone:hover{
+    width:100%;
+    height:200px;
+    background-color:greenyellow;
+    position:absolute;
+    
+}

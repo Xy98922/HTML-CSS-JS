@@ -1,0 +1,72 @@
+﻿li {
+    color: violet;
+    font-size: 32px;
+}
+
+ul li {
+    font-size: 45px;
+    color: black;
+}
+
+.nav li {
+    color: aquamarine;
+}
+
+#most {
+    color: black;
+}
+
+ul {
+    height: 50px;
+    background-color: chocolate;
+}
+
+
+table {
+    width: 100%;
+    border-top: 3px solid orange;
+    background-color: #fcfcfc;
+    border-bottom: 0px solid #edeef0;
+}
+
+a {
+    display: block;
+}
+
+table th {
+    width: 40px;
+}
+
+    table th a {
+        width: 85px;
+        text-decoration: none;
+        padding: 5px;
+        color: black;
+        margin: 0px auto;
+    }
+
+        table th a:hover {
+            color: rgb(255 165 0);
+            background-color: rgb(237 239 237);
+        }
+
+.pink {
+    font-size: 30px;
+}
+
+h1 {
+    height: 40px;
+}
+
+div {
+    width: 100px;
+    height: 50px;
+    background-color: mediumspringgreen;
+    margin: 100px auto;
+}
+
+    div p {
+        height: 30px;
+        background-color: deepskyblue;
+        padding: 2px;
+    }

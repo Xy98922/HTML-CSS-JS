@@ -1,0 +1,88 @@
+﻿* {
+    margin: 0;
+}
+
+/*div {
+    width: 100%;
+    height: 66px;
+    background-color: #ffffff;
+    margin: auto;*/
+    /*  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.5);*/
+/*}*/
+
+span {
+    width: 50px;
+    height: 40px;
+    background-color: darkseagreen;
+    float: left;
+}
+
+.logo {
+    margin-left: 76px;
+    margin-right: 76px;
+    width: 133px;
+    height: 66px;
+    background-image: url(huawei_logo.png);
+    background-size: 133px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+li {
+    height: 66px;
+    text-align: center;
+    font: 14.4px 'Microsoft Yahei';
+    float: left;
+    list-style: none;
+    line-height: 75px;
+    margin: 0px 20px;
+}
+
+    li :hover {
+        border-bottom: 2px solid #00a3fc;
+        color: #00a3fc;
+    }
+
+    li a {
+        float: left;
+        height: 66px;
+        color: black;
+        text-decoration: none;
+    }
+
+.search {
+    margin-top: 18px;
+    height: 33px;
+    width: 337px;
+    background-color: #f1f6f7;
+    float: right;
+    border-left: 1px solid #00a3fc;
+    border-top: 1px solid #00a3fc;
+    border-bottom: 1px solid #00a3fc;
+    border-right: 1px solid #00a3fc;
+    color: #bfbfbf;
+    padding-left: 15px;
+    /*border-radius:4px;*/
+}
+
+.sealogo {
+    margin-top: 18px;
+    height: 37px;
+    width: 45px;
+    background-color: #00a3fe;
+    float: right;
+    border: 1px solid #00a3fe;
+    margin-right: 50px;
+    background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg95.699pic.com%2Fxsj%2F15%2F9u%2Fry.jpg%21%2Ffw%2F700%2Fwatermark%2Furl%2FL3hzai93YXRlcl9kZXRhaWwyLnBuZw%2Falign%2Fsoutheast&refer=http%3A%2F%2Fimg95.699pic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1639041881&t=f74b64d5813b0d7c313820687c41e4ee);
+    background-size: 45px 37px;
+}
+
+.banner {
+    width:100%;
+    height: 642px;
+    /*background: url(vmall4.jpg) no-repeat top center;*/
+    background-position-x: -100px;
+    float: left;
+    background-color:blue;
+}

@@ -1,0 +1,41 @@
+﻿div {
+    color: purple;
+}
+
+body {
+    font-size: 26px;
+    <!-- text-align: right; -->
+}
+
+.red29 {
+    width: 100px;
+    height: 100px;
+    color: red;
+    line-height: 33px;
+    font-style: italic;
+    background-color: rgb(182 202 160);
+}
+
+.pink {
+    text-decoration: none;
+    color: green;
+    text-indent: 4em;
+}
+
+#nav {
+    color: blue;
+}
+
+#idsex {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif,'Agency FB';
+}
+
+em {
+    color: rgb(18 164 246);
+    text-indent: 2em;
+}
+
+.hight {
+    line-height: 100px;
+}

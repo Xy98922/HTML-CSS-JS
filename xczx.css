@@ -1,0 +1,76 @@
+﻿*{
+    margin:0px;
+}
+.banner
+{
+    height:422px;
+    background-color:antiquewhite;
+}
+    .banner .course {
+        width: 200px;
+        background-color: deeppink;
+        float: right;
+        padding:0px;
+        margin-right: 360px;
+       
+    }
+    .banner div {
+        width: 200px;
+        background-color: lightskyblue;
+        float: right;
+        padding: 0px;
+        margin-right: 360px;
+        color:white;
+        text-align:center;
+    }
+    .banner div ul li {
+        width:184px;
+        list-style: none;
+        height: 55px;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        text-align: center;
+        background-color: #ffffff;
+        float:right;
+        padding:0 8px;
+    }
+
+        .banner div ul li h3 {
+            margin-top: 5px;
+            height: 25px;
+            font-size: 15px;
+            color: black;
+            text-align: left;
+            margin-bottom: 0px;
+        }
+        .banner div ul li h2 {
+            height: 30px;
+            font-size: 25px;
+            color: skyblue;
+            text-align: center;
+            border: 2px solid skyblue;
+            margin:7px 0px;
+            line-height:initial;
+            padding: 5px 0px;
+        }
+        .banner div ul li p {
+            margin-top: 0px;
+            font-size: 2px;
+            color: rgba(0,0,0,.4);
+            text-align: left;
+            height: 25px;
+            margin-bottom: 15px;
+        }
+        dl{
+            float:right;
+            margin-left:45px;
+            margin-right:50px;
+        }
+        dl dd a{
+            color:black;
+            text-decoration:none;
+            font-size:12px;
+
+        }
+dl dt {
+   margin-bottom:8px;
+}

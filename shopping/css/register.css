@@ -1,0 +1,129 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header p {
+    width: 100%;
+    height: 82px;
+    border-bottom: 2px solid #ca111a;
+}
+
+    header p img {
+        position: absolute;
+        margin-top: 20px;
+    }
+
+.registerarea {
+    position: relative;
+    height: 522px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+    .registerarea h3 {
+        width: 1192px;
+        height: 43px;
+        background-color: #ececec;
+        margin-top: 22px;
+        border: 1px solid #dfdfdf;
+        line-height: 43px;
+        font-size: 15px;
+        font-weight: 600;
+        padding-left: 8px;
+    }
+
+    .registerarea p {
+        line-height: 43px;
+        font-size: 12px;
+        font-weight: 500;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        margin-right: 8px;
+    }
+
+        .registerarea p a {
+            color: #c81623;
+        }
+
+.reg_form {
+    margin-left: 385px;
+}
+
+    .reg_form label {
+        width: 100px;
+        display: inline-block;
+        text-align: right;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .reg_form li {
+        margin: 20px 0;
+        height: 36px;
+    }
+    .reg_form input {
+        height:23px;
+        border:1px solid #ccc;
+    }
+        .reg_form li span {
+            display: inline-block;
+            margin-left: 10px;
+            color: #e12d2c;
+            font-size: 10px;
+        }
+
+    .reg_form img {
+        margin-left: 119px;
+        height: 12px;
+    }
+    .reg_form em {
+       height:12px;
+       width:30px;
+      margin:0 1px;
+      display:inline-block;
+      line-height:12px;
+      text-align:center;
+      color:white;
+      font-size:6px;
+    }
+        .reg_form em:first-child {
+            background-color: #f02209;
+        }
+        .reg_form em:nth-child(2) {
+            background-color: #3aa43c;
+        }
+        .reg_form em:nth-child(3) {
+            background-color: #ff9100;
+        }
+    .reg_form li span::before {
+        width: 22px;
+        height: 20px;
+        background-image: url(../image/squ8.png);
+        background-repeat: no-repeat;
+        float: left;
+        content: '  ';
+    }
+
+.registerarea button  {
+    width: 201px;
+    height: 34px;
+    background-color: #ca111a;
+   margin-top:450px;
+}
+.check{
+    width:230px;
+    height:26px;
+    margin-left:101px;
+}
+    .check a {
+        color: #01a0e9;
+    }
+    .check input {
+       height:18.5px;
+       margin-right:10px;
+    }
+.check input, .check a,.check h4 {
+    float: left;
+  
+}

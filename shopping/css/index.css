@@ -1,0 +1,205 @@
+.main {
+    width: 721px;
+    height: 456px;
+    margin-top: 8px;
+    margin-left: 217px;
+    float: left;
+    background-image: url(../image/focus1.png);
+    background-size: 721px 456px;
+    background-repeat: no-repeat;
+}
+
+.newsflash {
+    float: right;
+    width: 251px;
+    height: 456px;
+    margin-top: 6px;
+    border: 1px solid #e4e4e4;
+}
+
+    .newsflash h3 {
+        text-indent: 20px;
+        font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+        color: #666;
+        line-height: 34px;
+        border-bottom: 1px dotted #e4e4e4;
+        padding-right: 20px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+
+        .newsflash h3 a {
+            font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+            line-height: 34px;
+            float: right;
+            margin: 0px;
+        }
+
+    .newsflash a {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; /*超出文字变省略号三部曲*/
+        margin: 10px 10px;
+    }
+
+.multi {
+    height: 203px;
+    width: 100%;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    background-image: url(../image/icons.png);
+    z-index: 2;
+    position: relative;
+    margin-bottom: 1px;
+}
+
+.newsflash .multi div[class^=multibox] {
+    width: 61.75px;
+    height: 66px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    float: left;
+    position: relative;
+}
+
+.newsflash .multi div:nth-child(4n) {
+    border-right: 0px solid transparent;
+}
+
+.newsflash .multi div:nth-child(n+9) {
+    border-bottom: 0px solid transparent;
+}
+
+.multi p {
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    width: 59px;
+    margin: 0 auto;
+}
+
+.newsflash img {
+    height: 67px;
+    width: 100%
+}
+
+.recommended {
+    margin-top: 8px;
+    width: 206px;
+    height: 163px;
+    background-image: url(../image/recom.png);
+    background-color: #5c5251;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+.recom03 {
+    margin-top: 8px;
+    width: 248.5px;
+    height: 163px;
+    background-image: url(../image/recom_03.jpg);
+    background-color: #ebebeb;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+.w .recom03:nth-child(n+2)::before {
+    margin-top: 10px;
+    height: 143px;
+    width: 0px;
+    border-left: 2px solid #dddddd;
+    float: left;
+    z-index: 2;
+    content: ' ';
+}
+/*灵活运用after伪元素*/
+.box_hd {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+    float: left;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+    .box_hd h3 {
+        color: #d04c53;
+        float: left;
+        font-weight: 400;
+    }
+
+    .box_hd li {
+        float: right;
+        margin: 0 7px;
+        color: #666;
+        font-size: 12px;
+    }
+
+        .box_hd li:nth-child(2n) {
+            width: 1px;
+            height: 12px;
+            margin-top: 9px;
+            border-right: 1px solid #666;
+        }
+
+        .box_hd li:last-child {
+            color: #d04c53;
+        }
+
+.box_bd {
+    height: 361px;
+    width: 100%;
+    float: left;
+}
+
+.box_bd  img{
+
+    width: 100%;
+
+}
+.box_bd a{
+    display:block;
+}
+
+    .box_bd  div[class^=col] {
+        float: left;
+    }
+.col_210 {
+    width: 210px;
+    background-color:#f9f9f9;
+    height:361px;
+}
+.col_210 img{
+ margin-left:13px;
+}
+    .col_210 li {
+        width: 85px;
+        height: 34px;
+        float: left;
+        text-align: center;
+        line-height: 32px;
+        border-bottom: 1px solid #ededed;
+        margin-left:13px;
+    }
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 219px;
+
+}
+.box_bd .col_221:nth-of-type(2n) {
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+.col_219 {
+    width: 216px;
+}
+    .col_219 a:first-child {
+        border-bottom: 1px solid #ededed;
+    }

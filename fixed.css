@@ -1,0 +1,191 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?6awn0s');
+    src: url('fonts/icomoon.eot?6awn0s#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?6awn0s') format('truetype'), url('fonts/icomoon.woff?6awn0s') format('woff'), url('fonts/icomoon.svg?6awn0s#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.fixed {
+    position: fixed;
+    left: 50%;
+    top: 50px;
+    margin-left: 200px;
+    background-image: url(图层135.png);
+    width: 50px;
+    height: 50px;
+}
+
+p {
+    height: 100px;
+}
+
+.ad {
+    margin: auto;
+    margin-top: 50px;
+    height: 280px;
+    width: 520px;
+    background-color: purple;
+    position: relative;
+    z-index: 2;
+    background-image: url(vmall4.jpg);
+    background-size: 520px 280px;
+    background-repeat: no-repeat;
+}
+
+.rarrow, .larrow {
+    height: 40px;
+    width: 20px;
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+}
+
+.larrow {
+    left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.rarrow {
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.dotted {
+    height: 19px;
+    width: 100px;
+    background-color: rgba(255,255,255,.2);
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: 0;
+    margin-left: -50px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+}
+
+.circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
+    background-color: white;
+    float: left;
+    margin-left: 5px;
+    margin-top: 3.5px;
+}
+
+    .circle:hover {
+        background-color: orangered;
+        visibility: hidden;
+    }
+
+.ad a {
+    text-decoration: none;
+    color: white;
+    line-height: 35px;
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.mask {
+    margin: auto;
+    height: 280px;
+    width: 520px;
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+
+.ad:hover .mask {
+    display: block;
+}
+
+.name .x {
+    width: 118px;
+    height: 118px;
+    background-image: url(vmall5.jpg);
+    background-color: pink;
+    background-repeat: no-repeat;
+    background-position: -250px -545px;
+    float: left;
+    cursor: text;
+}
+
+.name .y {
+    width: 119px;
+    height: 119px;
+    background-image: url(vmall5.jpg);
+    background-color: pink;
+    background-repeat: no-repeat;
+    background-position: -362px -545px;
+    float: left;
+    cursor: pointer;
+}
+
+span {
+    font-family: 'icomoon';
+    font-size: 50px;
+    color: deeppink;
+
+}
+
+.box2 {
+    height: 0px;
+    width: 0px;
+    border: 10px solid transparent;
+    border-bottom-color:deeppink;
+    float: right;
+    position: absolute;
+    right:5px;
+    top:-20px;
+    
+}
+
+.box {
+    margin-top:20px;
+    height: 150px;
+    width: 150px;
+    background-color:deeppink;
+    /*float: left;*/
+
+    /*文字溢出三部曲  加.....*/
+    white-space:normal;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+}
+input, textarea {
+    outline: none;
+}
+textarea {
+    resize: none;
+}
+.margin{
+    
+    height:100px;
+    width:100px;
+    background-color:forestgreen;
+    border:2px solid black;
+    float:left;
+    margin-left:-2px;
+    position:relative;
+}
+.margin:hover{
+    border-color:deeppink;
+    z-index:1;
+}

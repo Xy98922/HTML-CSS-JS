@@ -1,0 +1,50 @@
+﻿* {
+    margin: 0px;
+}
+
+.box1 {
+    margin-top:50px;
+    padding-top:50px;
+    margin: auto;
+    width: 464px;
+    height: 554px;
+    position: relative;
+    
+}
+
+.box2 {
+    margin: auto;
+    width: 456px;
+    height: 310px;
+    margin-right: 8px;
+    background-image: url(图层135.png);
+    background-size:456px;
+    background-repeat:no-repeat;
+    
+
+}
+
+.box3 {
+    margin: auto;
+    width: 456px;
+    height: 245px;
+    margin-right: 8px;
+}
+.box4 {
+    background-image: url(形状24.png);
+    margin: auto;
+    width: 40px;
+    height: 24px;
+    position: absolute;
+    top: 55px;
+    right: 4px;
+}
+.box1 p {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.orange {
+    color: orange;
+    margin-left: 40px;
+}

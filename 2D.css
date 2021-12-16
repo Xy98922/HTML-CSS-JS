@@ -1,0 +1,353 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.per {
+    perspective: 500px;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0,0) scale(1,1);
+    }
+
+    25% {
+        transform: translate(0px,500px) scale(1.5,1.5);
+    }
+
+    50% {
+        transform: translate(500px,500px) scale(2,2);
+    }
+
+    75% {
+        transform: translate(500px,0px) scale(2.5,2.5);
+    }
+
+    100% {
+        transform: translate(0px,0px) scale(1,1);
+    }
+}
+
+h1 {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    margin-left: 100px;
+    /*  transform:translateY(100px);*/ /*不影响其他元素的位置*/
+    transition: all 0.5s;
+    transform-origin: left bottom;
+}
+
+
+h2 {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    margin-left: 100px;
+    /*不影响其他元素的位置*/
+}
+
+h1:hover {
+    transform: rotate(20deg); /*不影响其他元素的位置*/
+}
+
+.father {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    /*  transform:translateY(100px);*/ /*不影响其他元素的位置*/
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+    .father:hover {
+        transform: scale(2,1);
+    }
+/*a {
+    height: 400px;
+    width: 400px;
+    transition: all 0.5s;
+    overflow: hidden;
+    display:inline-block;
+}
+a img{
+    height:400px;
+   width:400px;
+   transition:all 0.5s;
+   overflow:hidden;
+
+}
+a img:hover {
+    transform:scale(1.1,1.1);
+}*/
+ul li {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    float: left;
+    border: 1px solid green;
+    line-height: 35px;
+    list-style: none;
+    text-align: center;
+    margin: 0 1px;
+    transition: all 0.2s;
+    animation: move;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+    ul li a {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    ul li:hover {
+        animation-play-state: paused;
+    }
+
+.city {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    position: relative;
+}
+
+.dotted {
+    height: 5px;
+    width: 5px;
+    background-color: deepskyblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.city div[class^=pulse] {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 12px deepskyblue;
+    animation: move 1s infinite linear;
+}
+
+@keyframes move {
+    0% {
+    }
+
+    75% {
+        width: 25px;
+        height: 25px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 35px;
+        height: 35px;
+        opacity: 0;
+    }
+}
+
+.pulse2 {
+    animation-delay: 0.333s !important;
+}
+
+.pulse3 {
+    animation-delay: 0.6666s !important;
+}
+
+.step {
+    height: 20px;
+    background-color: deeppink;
+    animation: w 10s steps(10) forwards;
+    width: 0px;
+    overflow: hidden;
+}
+
+@keyframes w {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 200px;
+    }
+}
+
+body {
+    position: relative;
+}
+
+.bear {
+    width: 200px;
+    height: 100px;
+    background-image: url(bear.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    animation: run 1s steps(8) infinite forwards, cc 2s forwards;
+    background-color: rgba(0,0,0,.05);
+}
+
+@keyframes run {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: -1600px 0;
+    }
+}
+
+@keyframes cc {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+.l3d {
+    height: 300px;
+    width: 300px;
+    background-image: url(head.jpg);
+    background-size: 300px 300px;
+    margin: 100px auto;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+    }
+
+    100% {
+        /*  transform: rotate3d(1,1,1,360deg);*/
+    }
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 100px auto;
+    transform-style: preserve-3d;
+    transition: all 2s;
+}
+
+.green {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: green;
+}
+
+.pink {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: pink;
+    transform: rotateX(60deg);
+}
+
+.box:hover {
+    transform: rotateY(60deg);
+}
+
+.box2 {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    background-color: rgba(0,0,0,.05);
+    animation: fliped 0.3s;
+}
+
+    .box2 div[class^=circle] {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: pink;
+        border-radius: 50%;
+        line-height: 300px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+.circle2 {
+    background-color: purple !important;
+}
+
+.circle1 {
+    transform: rotateY(180deg);
+}
+
+@keyframes fliped {
+    0% {
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+.box3 {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    background-color: rgba(0,0,0,.05);
+    transition: all 0.8s linear;
+    margin-top: 100px;
+    transition: all 0.5s ;
+    color:white;
+}
+
+.front {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: purple;
+    line-height: 300px;
+    text-align: center;
+    font-size: 25px;
+    transform: translateZ(150px);
+}
+
+.bottom {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: pink;
+    line-height: 300px;
+    text-align: center;
+    font-size: 25px;
+    transform: translateY(-150px) rotateX(90deg);
+}
+
+.box3:hover {
+    transform: rotateX(-90deg);
+}

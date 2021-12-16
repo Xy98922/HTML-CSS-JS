@@ -1,0 +1,26 @@
+﻿.nav {
+    color: black !important;
+    text-decoration: none;
+    font-size:64px;
+}
+    .nav .bg1 {
+        color: blue;
+        text-decoration: none;
+    }
+    .nav .bg1:hover {
+        color: deeppink;
+        text-decoration: none;
+    }
+.bg1 {
+    color: yellow;
+    text-decoration: none;
+}
+/*div{
+    color:deeppink;
+}
+div{
+    color:aquamarine;
+}
+body{
+    font:22px/1.5 'Microsoft Yahei';
+}*/

@@ -1,0 +1,91 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 290px;
+    height: 373px;
+    background-color: #ffff;
+}
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    float: left;
+}
+.img {
+    width: 290px;
+    height: 245px;
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6d0a3e7acc3e91e2cfd83dbbe1d1c029.jpg?thumb=1&w=248&h=248&f=webp&q=90);
+}
+
+.grey {
+    color: #c6c6c6;
+    text-indent: 60px;
+    font-size: 12px;
+}
+
+.price {
+    font-size: 14px;
+    color: #ff6700;
+    text-indent: 95px;
+}
+
+.height {
+    height: 10px;
+}
+
+.shop {
+    float: left;
+    width: 309px;
+    height: 180px;
+    background-color:#ffff;
+}
+
+h3 {
+    color: #666666;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    width: 269px;
+    border-bottom: 2px dotted #e8e7e3;
+    display: inline-block;
+}
+
+li {
+    padding-left: 20px;
+    color: #666666;
+    height: 25px;
+    font-style: normal;
+    list-style: none;
+    text-shadow: 10px 10px 15px grey;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px 10px;
+    background-color: aquamarine;
+    margin: auto;
+}
+
+    .circle:hover {
+        box-shadow: 10px 10px 10px 10px rgba(0,0,0,.5);
+    }
+    span{
+        width:100px;
+        height:50px;
+        background-color:palevioletred;
+        float:left;
+    }
+    p{
+        height:70px;
+        background-color:purple;
+        float:right;
+    }
+    .father{
+        height:80px;
+        width:500px;
+        background-color:blue;
+      
+    }

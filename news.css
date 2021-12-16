@@ -1,0 +1,90 @@
+﻿.align {
+    text-align: center;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+body {
+    font: 16px/28px 'Microsoft Yahei';
+    background-image: url(https://ossweb-img.qq.com/upload/webplat/info/yxzj/20211029/636871238676940.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 40px;
+    background-attachment: scroll;
+}
+
+.grey {
+    font-size: 12px;
+    color: rgb(128 128 128);
+    text-align: center;
+    line-height: 5px;
+    text-decoration: none;
+}
+
+    .grey li {
+        font-size: 15px;
+        text-align: center;
+        line-height: 5px;
+        text-decoration: none;
+    }
+
+.indent {
+    text-indent: 2em;
+}
+
+a:link {
+    text-indent: 2em;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    height: 57px;
+    line-height: 57px;
+    background-image: url(https://game.gtimg.cn/images/js/title/title_sprite.png);
+    background-position:center center;
+}
+
+h3 {
+    height: 40.99px;
+    width: 150px;
+    background-image: url(https://game.gtimg.cn/images/js/title/title_sprite.png);
+    background-repeat: no-repeat;
+    background-position-x: -30px;
+    background-position-y: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 33px;
+    color:black;
+    
+}
+.black .big{
+    color: black;
+    text-decoration: none;
+    font-size:40px;
+}
+.img:hover {
+    background-color: #ff6f00;
+    background-image: url(https://img-bss.csdnimg.cn/1635149390726.gif);
+    background-position: center center;
+}
+
+input:focus {
+    background-color: aqua;
+    color: blue;
+}
+
+.kuai {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+}
+
+
+
+.white {
+    color: white;
+}
+ol li{
+    color: pink;
+}
