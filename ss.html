@@ -4,17 +4,38 @@
 <head>
     <meta charset="utf-8" />
     <title>JS基础语法学习</title>
+    <!--<link href="node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet" />
+    <link href="1.min.css" rel="stylesheet" />-->
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <style>
    
+
+        #result{
+            height:100px;
+            width:100px;
+            border: 1px solid red;
+        }
     </style>
-    <link href="1.min.css" rel="stylesheet" />
 </head>
+
 <body>
-     你好世界
+    <button id="send">
+        点击发送
+    </button>
+    <button id="cancel">
+        取消发送
+    </button>
+    <div id="result"></div>
 
 
     <script>
-
+        xhr = new XMLHttpRequest();
+        $('button')[0].onclick = function () {
+            $.post('http://127.0.0.1:8000/jQuery', { a: 100, b: 200 }, function (data) { $('#result')[0].innerHTML = data.name},'json');
+        };
+   
     </script>
 </body>
 </html>

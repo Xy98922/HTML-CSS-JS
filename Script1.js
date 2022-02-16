@@ -1,5 +1,5 @@
 // JavaScript source code
-var res = [];
+/*var res = [];
 
 var subsets = function (nums) {
     let length = nums.length;
@@ -23,5 +23,5 @@ function dfs(n, nums, trans) {
         trans.pop();
     }
 
-}
+}*/
 
