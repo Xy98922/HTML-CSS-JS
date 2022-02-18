@@ -1,15 +1,13 @@
 // JavaScript source code
 const express = require('express');
 const app = express();
-
-app.all('/jQuery', (request, response) => {
+var axios=require('axios');
+app.all('/', (request, response) => {
     response.setHeader('Access-Control-Allow-Origin', '*');
     response.setHeader('Access-Control-Allow-Headers', '*');
-    let a = {
-        'name': 'xiaoyang',
-        'age': 200
-    };
-    response.send(JSON.stringify(a));
+    response.setHeader('Access-Control-Allow-Method', '*');
+    
+    response.send('成功访问');
 });
 
 

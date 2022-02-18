@@ -28,14 +28,14 @@
         取消发送
     </button>
     <div id="result"></div>
-
-
+    <input type="text"> 
+      
     <script>
-        xhr = new XMLHttpRequest();
-        $('button')[0].onclick = function () {
-            $.post('http://127.0.0.1:8000/jQuery', { a: 100, b: 200 }, function (data) { $('#result')[0].innerHTML = data.name},'json');
-        };
-   
-    </script>
+       let input=$('input')[0];
+       input.onblur=function(){
+            $('#result')[0].html='10';
+        }
+        
+    </script>a
 </body>
 </html>

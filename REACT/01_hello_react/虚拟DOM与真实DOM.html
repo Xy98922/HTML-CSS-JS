@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入react核心库 -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <!-- 引入react-dom，用于支持react操作dom -->
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>  
+    <!-- 引入Babel，用于将jax转为js -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>REACT</title>
+</head>
+<body>
+           <div id="test"></div> 
+</body>
+<script type="text/babel">  //JSX,就是为了很方便的创建虚拟DOM  babel表示使用的是JSX规范
+    const VDOM=(<h1>Hello,React
+        <br/>
+        <span>asd</span>       
+        </h1>
+    );  //此处不要写引号，因为不是字符串 jsx语法
+    let div=document.getElementById('test');
+    console.log('虚拟DOM',VDOM); //本质是Object对象,轻量
+    ReactDOM.render(VDOM,document.getElementById('test'));
+
+</script>
+</html>
