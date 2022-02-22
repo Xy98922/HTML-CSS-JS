@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入react核心库 -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <!-- 引入react-dom，用于支持react操作dom -->
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>  
+    <!-- 引入Babel，用于将jax转为js -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>类式组件</title>
+</head>
+<body>
+    <div id="test" style="color:black;"></div> 
+</body>
+<script type="text/babel">  //JSX,就是为了很方便的创建虚拟DOM babel表示使用的是JSX规范
+let hot;
+class MyComponent extends React.Component{
+  render(){  
+      console.log(this);    
+      const{name,age,class1}=this.props;
+
+    return(
+        <ul>
+            <li>{name+1}</li>
+            <li>{age+1}</li>
+            <li>{class1+1}</li>
+     </ul>
+    
+     )
+  }
+    state={isHot:false}
+    Demo=()=>{       
+        this.setState({isHot:!this.state.isHot});
+}
+}
+const p={
+    name:13,
+    age:14,
+    class1:15
+}
+ReactDOM.render(<MyComponent {...p}/>,document.getElementById('test'));
+</script>
+</html>

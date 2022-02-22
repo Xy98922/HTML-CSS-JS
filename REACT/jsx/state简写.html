@@ -10,22 +10,24 @@
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>  
     <!-- 引入Babel，用于将jax转为js -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <title>REACT</title>
+    <title>类式组件</title>
 </head>
 <body>
-           <div id="test"></div> 
+    <div id="test" style="color:black;"></div> 
 </body>
-<script type="text/babel">  //JSX,就是为了很方便的创建虚拟DOM  babel表示使用的是JSX规范
-    const VDOM=(<h1>Hello,React
-        <br/>
-        <span>asd</span>
-        
-        
-        </h1>
-    
-    
-    )    //此处不要写引号，因为不是字符串 jsx语法
-    debugger;
-    ReactDOM.render(VDOM,document.getElementById('test'));
+<script type="text/babel">  //JSX,就是为了很方便的创建虚拟DOM babel表示使用的是JSX规范
+let hot;
+class MyComponent extends React.Component{
+  render(){       
+      
+        return <h1 onClick={this.Demo}> 今天天气很{this.state.isHot?'hot':'cool'} {console.log(this)}</h1>       
+    }
+
+    state={isHot:false}
+    Demo=()=>{       
+        this.setState({isHot:!this.state.isHot});
+}
+}
+ReactDOM.render(<MyComponent/>,document.getElementById('test'));
 </script>
 </html>

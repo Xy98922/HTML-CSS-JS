@@ -11,7 +11,11 @@ app.all('/', (request, response) => {
 });
 
 
-
 app.listen(8000, () => {
     console.log("serve started,8000pot supervising....");
 }); 
+class aa{
+   static a=1;
+}
+let aaa=new aa;
+console.dir(aa);

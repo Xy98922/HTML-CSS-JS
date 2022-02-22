@@ -31,11 +31,14 @@
     <input type="text"> 
       
     <script>
-       let input=$('input')[0];
-       input.onblur=function(){
-            $('#result')[0].html='10';
-        }
-        
-    </script>a
+
+       let a=10;
+       function aa (){
+           const p=a++;
+           console.log(p);
+       }
+       for(let i=10;i<100;i++)
+       aa();
+    </script>
 </body>
 </html>
